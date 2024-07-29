@@ -21,7 +21,7 @@
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
         .header img {
             border-radius: 50%;
@@ -29,15 +29,16 @@
             height: 150px;
         }
         .header div {
-            flex: 1;
             margin-left: 20px;
         }
         .header h1 {
             margin: 0;
             font-size: 2.5em;
+            color: #333;
         }
         .header p {
             margin: 5px 0;
+            color: #666;
         }
         .section {
             margin: 20px 0;
@@ -46,6 +47,7 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            color: #333;
         }
         .section ul {
             list-style: none;
@@ -53,19 +55,28 @@
         }
         .section ul li {
             margin: 10px 0;
+            color: #333;
         }
         .contact-info, .skills {
             background: #333;
             color: #fff;
             padding: 10px;
+            margin: 20px 0;
         }
         .contact-info a, .skills span {
             color: #fff;
             text-decoration: none;
         }
-        .skills span {
-            display: inline-block;
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li {
             margin: 5px 0;
+            display: inline-block;
+            background: #444;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
